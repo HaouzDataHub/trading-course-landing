@@ -1,185 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Analysis Trading Course</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" defer>
-</head>
-<body>
-    <!-- NAVBAR -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Analysis Mastery</title>
+    <meta
+      name="description"
+      content="Professional technical analysis course: price action, SMC, ICT, Wyckoff, and risk management for serious traders."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts: DM Sans + Playfair Display + Cairo (Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">Trading Academy</div>
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
-                <li><a href="#" class="nav-link" data-page="courses">Courses</a></li>
-                <li><a href="#" class="nav-link" data-page="about">About</a></li>
-                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
-            </ul>
+      <div class="nav-container">
+        <div class="nav-brand">
+          TA<span>Mastery</span>
         </div>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+          <li><a href="#" class="nav-link" data-page="courses">Courses</a></li>
+          <li><a href="#" class="nav-link" data-page="about">About</a></li>
+          <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
 
-    <!-- MAIN CONTENT -->
-    <main id="page-content">
-        <!-- HOME PAGE -->
-        <section id="home" class="page">
-            <div class="hero">
-                <div class="hero-content">
-                    <h1>Technical Analysis Mastery</h1>
-                    <p class="hero-subtitle">Learn professional trading strategies from market fundamentals to advanced techniques</p>
-                    <div class="hero-actions">
-                        <button class="btn btn-primary" id="enroll-btn">Start Learning</button>
-                        <button class="btn btn-secondary" id="explore-btn">Explore Courses</button>
-                    </div>
-                </div>
-            </div>
+    <!-- HOME PAGE -->
+    <main id="home" class="page">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Professional Trading Curriculum
+          </div>
 
-            <!-- FEATURES SECTION -->
-            <section class="features">
-                <h2>What You Will Learn</h2>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <h3>Price Action Analysis</h3>
-                        <p>Master the art of reading market movements and identifying trading opportunities through pure price action strategies.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>Support & Resistance</h3>
-                        <p>Understand key levels, breakouts, and how professional traders use these concepts for consistent profits.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>Advanced Methods</h3>
-                        <p>Deep dive into SMC, ICT, and Wyckoff methods used by institutional traders worldwide.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>Risk Management</h3>
-                        <p>Learn the psychology of trading and implement proven risk management techniques for long-term success.</p>
-                    </div>
-                </div>
-            </section>
-        </section>
+          <h1>
+            Technical Analysis
+            <span>Mastery Program</span>
+          </h1>
 
-        <!-- COURSES PAGE -->
-        <section id="courses" class="page hidden">
-            <div class="page-header">
-                <h1>Course Curriculum</h1>
-                <p>Structured learning path from beginner to advanced trader</p>
-            </div>
-            
-            <div class="courses-grid">
-                <div class="course-card">
-                    <div class="course-level">Beginner</div>
-                    <h3>Foundation Course</h3>
-                    <p>Introduction to technical analysis, chart types, and basic indicators</p>
-                    <ul class="course-topics">
-                        <li>Candlestick Patterns</li>
-                        <li>Trend Analysis</li>
-                        <li>Moving Averages</li>
-                        <li>Volume Analysis</li>
-                    </ul>
-                    <button class="btn btn-outline">View Course</button>
-                </div>
+          <p class="hero-ar">
+            برنامج احترافي لتعلّم <strong>التحليل الفني</strong> من الأساسيات حتى
+            أساليب المؤسسات، بخطوات عملية وواضحة.
+          </p>
 
-                <div class="course-card">
-                    <div class="course-level">Intermediate</div>
-                    <h3>Advanced Strategies</h3>
-                    <p>Professional trading schools and institutional strategies</p>
-                    <ul class="course-topics">
-                        <li>SMC Concepts</li>
-                        <li>ICT Methodology</li>
-                        <li>Order Flow</li>
-                        <li>Market Structure</li>
-                    </ul>
-                    <button class="btn btn-outline">View Course</button>
-                </div>
+          <p class="hero-subtitle">
+            Learn institutional-grade technical analysis: price action, market
+            structure, liquidity, SMC, ICT and Wyckoff, combined with strict
+            risk management and trading psychology.
+          </p>
 
-                <div class="course-card">
-                    <div class="course-level">Advanced</div>
-                    <h3>Professional Trading</h3>
-                    <p>Master-level techniques and live trading analysis</p>
-                    <ul class="course-topics">
-                        <li>Wyckoff Method</li>
-                        <li>Confluence Analysis</li>
-                        <li>Live Trading</li>
-                        <li>Portfolio Management</li>
-                    </ul>
-                    <button class="btn btn-outline">View Course</button>
-                </div>
-            </div>
-        </section>
+          <div class="hero-actions">
+            <button id="enroll-btn" class="btn btn-primary">
+              Enroll Now
+            </button>
+            <button id="explore-btn" class="btn btn-secondary">
+              Explore Curriculum
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <!-- ABOUT PAGE -->
-        <section id="about" class="page hidden">
-            <div class="page-header">
-                <h1>About This Course</h1>
-                <p>Professional education in technical analysis trading</p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Why Learn Technical Analysis?</h2>
-                    <p>Technical analysis is the foundation of successful trading. Whether you're trading forex, stocks, or cryptocurrencies, understanding how to read charts and identify trends is essential.</p>
-                    <p>Our comprehensive curriculum covers everything from basic concepts to institutional-level trading strategies used by professional traders and hedge funds worldwide.</p>
-                    
-                    <h3>Course Features</h3>
-                    <ul class="about-list">
-                        <li>Self-paced learning with lifetime access</li>
-                        <li>Live trading sessions and market analysis</li>
-                        <li>Professional trading journal templates</li>
-                        <li>Community support and mentorship</li>
-                        <li>Real-world case studies and examples</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <!-- Key Outcomes / Features -->
+      <section class="features">
+        <h2>What You Will Master</h2>
+        <p class="features-subtitle">
+          A complete roadmap from raw market structure to advanced institutional
+          concepts.
+        </p>
+        <p class="section-ar">
+          مسار متكامل يبدأ من قراءة حركة السعر البسيطة وصولاً إلى أساليب
+          المتداولين المحترفين والمؤسسات.
+        </p>
 
-        <!-- CONTACT PAGE -->
-        <section id="contact" class="page hidden">
-            <div class="page-header">
-                <h1>Get In Touch</h1>
-                <p>Have questions? We're here to help</p>
-            </div>
-            
-            <div class="contact-container">
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="Your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="your@email.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </section>
+        <div class="features-grid">
+          <article class="feature-item">
+            <div class="feature-tag">Price Action</div>
+            <h3>Market Structure & Momentum</h3>
+            <p>
+              Learn to read naked charts, identify swing points, trends, and
+              shifts in momentum without relying on lagging indicators.
+            </p>
+            <p class="text-ar">
+              فهم هيكل السوق (Market Structure) وكيفية قراءة القمم والقيعان والترند
+              مباشرة من حركة السعر بدون مؤشرات.
+            </p>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-tag">Liquidity & Zones</div>
+            <h3>Support, Resistance & Liquidity</h3>
+            <p>
+              Build clean support/resistance maps, liquidity pools, and
+              high-probability zones where price is likely to react.
+            </p>
+            <p class="text-ar">
+              رسم مناطق دعم ومقاومة واضحة، وتحديد مناطق السيولة التي تتحرك نحوها
+              الأسعار غالبًا لاصطياد الفرص بدقة.
+            </p>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-tag">Institutional</div>
+            <h3>SMC, ICT & Wyckoff</h3>
+            <p>
+              Go deep into the logic behind SMC, ICT and Wyckoff to understand
+              how smart money engineers price.
+            </p>
+            <p class="text-ar">
+              تعلّم منطق <span dir="ltr">SMC / ICT / Wyckoff</span> وكيف يتم
+              تحريك السوق من قبل السيولة الكبيرة والمؤسسات.
+            </p>
+          </article>
+
+          <article class="feature-item">
+            <div class="feature-tag">Risk & Mindset</div>
+            <h3>Risk Management & Psychology</h3>
+            <p>
+              Design a robust risk model, position sizing rules, and professional
+              trading routines that protect your capital.
+            </p>
+            <p class="text-ar">
+              بناء خطة إدارة مخاطر واضحة، حجم عقد مناسب، وروتين تداول محترف
+              يحافظ على رأس المال ويقلّل من الأخطاء العاطفية.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
+
+    <!-- COURSES PAGE -->
+    <section id="courses" class="page hidden">
+      <header class="page-header">
+        <h1>Course Structure</h1>
+        <p>
+          A structured path from foundations to advanced institutional concepts.
+        </p>
+        <p class="section-ar">
+          هيكلة واضحة للدورة من الأساسيات إلى أعمق المفاهيم المؤسسية، خطوة بخطوة.
+        </p>
+      </header>
+
+      <section class="courses-grid">
+        <article class="course-card">
+          <span class="course-level">Phase 01 · Foundation</span>
+          <h3>Technical Basics & Chart Reading</h3>
+          <p class="course-meta">Price charts · Timeframes · Candles</p>
+          <ul class="course-topics">
+            <li>Market mechanics and how price is delivered</li>
+            <li>Timeframes, sessions and volatility cycles</li>
+            <li>Candlestick logic, wicks and bodies</li>
+            <li>Basic market structure and trend definition</li>
+          </ul>
+          <p class="text-ar">
+            تأسيس قوي لفهم كيفية تحرك السعر، وهياكل السوق الأساسية، وكيفية قراءة
+            الشموع والإطارات الزمنية بثقة.
+          </p>
+        </article>
+
+        <article class="course-card">
+          <span class="course-level">Phase 02 · Price Action</span>
+          <h3>Advanced Market Structure</h3>
+          <p class="course-meta">Order flow · Liquidity · Zones</p>
+          <ul class="course-topics">
+            <li>Swings, breaks of structure and trend shifts</li>
+            <li>Liquidity pools, equal highs/lows and stops</li>
+            <li>Key support/resistance and refined zones</li>
+            <li>Entry models based on reaction and confirmation</li>
+          </ul>
+          <p class="text-ar">
+            الانتقال من قراءة عشوائية لحركة السعر إلى فهم احترافي لهياكل السوق،
+            مناطق السيولة، ونماذج الدخول عالية الاحتمالية.
+          </p>
+        </article>
+
+        <article class="course-card">
+          <span class="course-level">Phase 03 · Institutional</span>
+          <h3>SMC, ICT & Wyckoff Logic</h3>
+          <p class="course-meta">Smart money concepts</p>
+          <ul class="course-topics">
+            <li>Premium/discount pricing and dealing ranges</li>
+            <li>Order blocks, FVGs and mitigation concepts</li>
+            <li>Wyckoff accumulation and distribution schematics</li>
+            <li>Designing high-probability trade plans</li>
+          </ul>
+          <p class="text-ar">
+            التعمّق في منطق المؤسسات: مناطق التسعير، البلوك أوردر،
+            <span dir="ltr">FVG</span>، ومراحل التراكم/التصريف بأسلوب مبسط.
+          </p>
+        </article>
+
+        <article class="course-card">
+          <span class="course-level">Phase 04 · Execution</span>
+          <h3>Risk, Psychology & Playbook</h3>
+          <p class="course-meta">Risk model · Mindset · Journaling</p>
+          <ul class="course-topics">
+            <li>Building a personal risk model and daily routine</li>
+            <li>Psychological traps and emotional discipline</li>
+            <li>Trade journaling and data-driven review</li>
+            <li>Building your own trading playbook</li>
+          </ul>
+          <p class="text-ar">
+            تحويل الاستراتيجية إلى نظام عملي منضبط بإدارة مخاطر واضحة، روتين
+            يومي، وتوثيق صفقات يساعدك على التطوّر الحقيقي.
+          </p>
+        </article>
+      </section>
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section id="about" class="page hidden">
+      <header class="page-header">
+        <h1>About This Program</h1>
+        <p>
+          Built for serious traders who want to think and operate like
+          professionals, not signal followers.
+        </p>
+        <p class="section-ar">
+          هذه الدورة موجهة للمتداول الذي يريد أن يفهم السوق بعقليّة محترف،
+          بعيدًا عن التوصيات العشوائية والاعتماد على الآخرين.
+        </p>
+      </header>
+
+      <section class="courses-grid">
+        <article class="course-card">
+          <span class="course-level">Methodology</span>
+          <h3>From Theory to Execution</h3>
+          <p>
+            Every concept is connected directly to live chart examples, clear
+            trade logic, and practical checklists you can apply in your own
+            trading.
+          </p>
+          <p class="text-ar">
+            الربط بين الشرح النظري والتطبيق العملي على الشارت، مع خطوات واضحة
+            يمكنك استخدامها كقائمة مراجعة قبل دخول أي صفقة.
+          </p>
+        </article>
+
+        <article class="course-card">
+          <span class="course-level">For Serious Traders</span>
+          <h3>No Hype. Just Clear Logic.</h3>
+          <p>
+            The focus is on clean charts, structured thinking, and data-driven
+            improvement, not on predictions or guaranteed outcomes.
+          </p>
+          <p class="text-ar">
+            التركيز هنا على منطق السوق والانضباط، وليس على الوعود أو النتائج
+            الخيالية. الهدف هو بناء مهارة حقيقية على المدى الطويل.
+          </p>
+        </article>
+      </section>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact" class="page hidden">
+      <header class="page-header">
+        <h1>Contact & Enrollment</h1>
+        <p>
+          For enrollment details, questions, or collaboration, send a message
+          and you will receive a clear response with next steps.
+        </p>
+        <p class="section-ar">
+          للاستفسار عن التسجيل أو أي أسئلة متعلقة بالبرنامج، أرسل رسالة قصيرة
+          وسيتم الرد عليك بخطوات واضحة.
+        </p>
+      </header>
+
+      <section class="contact-container">
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tell us briefly about your trading experience and what you want from this program."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Send Message
+          </button>
+        </form>
+      </section>
+    </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Trading Academy. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact</a>
-            </div>
+      <div class="footer-content">
+        <p class="footer-text">
+          © 2025 Technical Analysis Mastery · All rights reserved.
+        </p>
+        <div class="footer-links">
+          <a href="#home" data-page="home" class="footer-link">Home</a>
+          <a href="#courses" data-page="courses" class="footer-link">Curriculum</a>
+          <a href="#about" data-page="about" class="footer-link">About</a>
+          <a href="#contact" data-page="contact" class="footer-link">Contact</a>
         </div>
+      </div>
     </footer>
 
-    <script src="script.js" defer></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
