@@ -1,4 +1,4 @@
-// Advanced Navigation & Page System - 2025
+// Professional Navigation System - 2025
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -11,7 +11,7 @@ if (hamburger) {
   });
 }
 
-// Navbar Navigation Links
+// Navbar Navigation
 navLinks.forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
@@ -19,6 +19,8 @@ navLinks.forEach(link => {
     navigateTo(page);
     navMenu.classList.remove('active');
     hamburger.classList.remove('active');
+    navLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
   });
 });
 
@@ -32,49 +34,32 @@ function navigateTo(page) {
   }
 }
 
-// Hero Section Buttons - Enroll Now Button
+// Hero Buttons
 const enrollBtn = document.getElementById('enroll-btn');
 if (enrollBtn) {
-  enrollBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    alert('Thank you for your interest! Course enrollment coming soon.');
+  enrollBtn.addEventListener('click', () => {
+    alert('Welcome! Course enrollment is now available.');
   });
 }
 
-// Hero Section Buttons - Free Lessons Button
-const freeLessonsBtn = document.getElementById('free-lessons-btn');
-if (freeLessonsBtn) {
-  freeLessonsBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    navigateTo('free-lessons');
-    navMenu.classList.remove('active');
-    hamburger.classList.remove('active');
+const exploreBtn = document.getElementById('explore-btn');
+if (exploreBtn) {
+  exploreBtn.addEventListener('click', () => {
+    navigateTo('courses');
+    navLinks.forEach(l => l.classList.remove('active'));
+    document.querySelector('[data-page="courses"]').classList.add('active');
   });
 }
 
-// Video Player - Click to Play
-document.querySelectorAll('[data-video-id]').forEach(video => {
-  video.style.cursor = 'pointer';
-  video.addEventListener('click', function() {
-    const videoId = this.getAttribute('data-video-id');
-    const modal = document.createElement('div');
-    modal.className = 'video-modal active';
-    modal.innerHTML = `<div class='video-content'><button class='close'>×</button><iframe width='100%' height='600' src='https://www.youtube.com/embed/${videoId}' frameborder='0' allowfullscreen></iframe></div>`;
-    document.body.appendChild(modal);
-    modal.querySelector('.close').onclick = () => modal.remove();
-    modal.onclick = (e) => e.target === modal && modal.remove();
-  });
-});
-
-// Contact Form Submission
-const form = document.getElementById('contact-form');
-if (form) {
-  form.addEventListener('submit', (e) => {
+// Contact Form
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Thank you! Your message has been received. We will contact you soon.');
-    form.reset();
+    alert('Thank you! Your message has been sent. We will contact you soon.');
+    contactForm.reset();
   });
 }
 
-// Initialize - Load Home Page on Page Load
+// Initialize
 navigateTo('home');
