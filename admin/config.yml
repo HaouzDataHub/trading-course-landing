@@ -1,0 +1,127 @@
+backend:
+  name: github
+  repo: YOUR_USERNAME/trading-course-landing
+  branch: main
+  auth_endpoint: api/auth
+  cms_label_prefix: netlify-cms/
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+
+  # ==================== الإعدادات العامة للموقع ====================
+  - name: "site_settings"
+    label: "إعدادات الموقع | Site Settings"
+    files:
+      - file: "_data/site_config.yml"
+        label: "معلومات الموقع العامة"
+        name: "site_config"
+        fields:
+          - { label: "اسم الدورة", name: "course_title", widget: "string", default: "دورة التحليل الفني" }
+          - { label: "Course Title (EN)", name: "course_title_en", widget: "string", default: "Technical Analysis Course" }
+          - { label: "وصف الدورة", name: "course_description", widget: "text" }
+          - { label: "Course Description (EN)", name: "course_description_en", widget: "text" }
+          - { label: "السعر (بالدولار)", name: "course_price", widget: "number", default: 99 }
+          - { label: "العملة", name: "currency", widget: "select", options: ["USD", "DZD", "TND", "MAD"], default: "USD" }
+          - { label: "رابط تليغرام", name: "telegram_link", widget: "string" }
+          - { label: "رابط ديسكورد", name: "discord_link", widget: "string" }
+          - { label: "رابط تيك توك", name: "tiktok_link", widget: "string" }
+          - { label: "رابط يوتيوب", name: "youtube_link", widget: "string" }
+
+  # ==================== قسم الهيرو ====================
+  - name: "hero"
+    label: "قسم الهيرو | Hero Section"
+    files:
+      - file: "_data/hero.yml"
+        label: "محتوى الهيرو"
+        name: "hero_content"
+        fields:
+          - { label: "العنوان الرئيسي", name: "title", widget: "string", default: "دورة التحليل الفني" }
+          - { label: "Main Title (EN)", name: "title_en", widget: "string" }
+          - { label: "الوصف الفرعي", name: "subtitle", widget: "text" }
+          - { label: "Subtitle (EN)", name: "subtitle_en", widget: "text" }
+          - { label: "صورة البانر", name: "banner_image", widget: "image" }
+
+  # ==================== المنهج والوحدات ====================
+  - name: "modules"
+    label: "المنهج والوحدات | Course Modules"
+    folder: "_data/modules"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "رقم الوحدة", name: "module_number", widget: "number", min: 1, max: 10 }
+      - { label: "اسم الوحدة", name: "module_title", widget: "string" }
+      - { label: "Module Title (EN)", name: "module_title_en", widget: "string" }
+      - { label: "وصف الوحدة", name: "description", widget: "text" }
+      - { label: "Description (EN)", name: "description_en", widget: "text" }
+      - { label: "المصطلحات الرئيسية", name: "key_terms", widget: "string", hint: "مثل: SMC, Price Action (فاصل بينها بـ comma)" }
+      - label: "الدروس داخل الوحدة"
+        name: "lessons"
+        widget: "list"
+        fields:
+          - { label: "عنوان الدرس", name: "lesson_title", widget: "string" }
+          - { label: "Lesson Title (EN)", name: "lesson_title_en", widget: "string" }
+          - { label: "وصف قصير", name: "description", widget: "text" }
+          - { label: "رابط الفيديو (YouTube/Vimeo)", name: "video_url", widget: "string" }
+          - { label: "مدة الفيديو (بالدقائق)", name: "duration_minutes", widget: "number" }
+          - { label: "هل هذا درس مجاني؟", name: "is_free", widget: "boolean", default: false }
+
+  # ==================== الدروس المجانية ====================
+  - name: "free_lessons"
+    label: "الدروس المجانية | Free Preview Lessons"
+    folder: "_data/free_lessons"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "عنوان الدرس", name: "title", widget: "string" }
+      - { label: "Title (EN)", name: "title_en", widget: "string" }
+      - { label: "وصف الدرس", name: "description", widget: "text" }
+      - { label: "Description (EN)", name: "description_en", widget: "text" }
+      - { label: "رابط الفيديو", name: "video_url", widget: "string" }
+      - { label: "صورة مصغّرة", name: "thumbnail", widget: "image" }
+      - { label: "ترتيب العرض", name: "order", widget: "number", default: 1 }
+
+  # ==================== شهادات الطلاب ====================
+  - name: "testimonials"
+    label: "شهادات الطلاب | Testimonials"
+    folder: "_data/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "اسم الطالب", name: "student_name", widget: "string" }
+      - { label: "الشهادة", name: "testimonial_text", widget: "text" }
+      - { label: "Testimonial (EN)", name: "testimonial_text_en", widget: "text" }
+      - { label: "التقييم (من 5)", name: "rating", widget: "select", options: ["5", "4.5", "4", "3.5", "3"], default: "5" }
+      - { label: "صورة الطالب", name: "student_image", widget: "image" }
+      - { label: "نشط", name: "active", widget: "boolean", default: true }
+
+  # ==================== الأسئلة الشائعة ====================
+  - name: "faq"
+    label: "الأسئلة الشائعة | FAQ"
+    folder: "_data/faq"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "السؤال", name: "question", widget: "string" }
+      - { label: "Question (EN)", name: "question_en", widget: "string" }
+      - { label: "الإجابة", name: "answer", widget: "text" }
+      - { label: "Answer (EN)", name: "answer_en", widget: "text" }
+      - { label: "الفئة", name: "category", widget: "select", options: ["عام", "تقني", "دفع", "محتوى"], default: "عام" }
+
+  # ==================== شرح المدارس ====================
+  - name: "trading_schools"
+    label: "شرح المدارس التجارية | Trading Schools"
+    folder: "_data/trading_schools"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "اسم المدرسة", name: "school_name", widget: "string" }
+      - { label: "School Name (EN)", name: "school_name_en", widget: "string" }
+      - { label: "الاختصار/المصطلح الإنجليزي", name: "abbreviation", widget: "string", hint: "مثل: SMC, ICT, Wyckoff" }
+      - { label: "وصف قصير", name: "short_description", widget: "text" }
+      - { label: "Short Description (EN)", name: "short_description_en", widget: "text" }
+      - { label: "شرح معمق", name: "detailed_description", widget: "markdown" }
+      - { label: "Detailed Explanation (EN)", name: "detailed_description_en", widget: "markdown" }
+      - { label: "المفاهيم الأساسية", name: "key_concepts", widget: "list", field: { label: "مفهوم", name: "concept", widget: "string" } }
+
