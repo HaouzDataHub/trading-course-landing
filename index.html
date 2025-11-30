@@ -1,185 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Technical Analysis Trading Course - Modern Education Platform</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Analysis Trading Course</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" defer>
 </head>
 <body>
-  <!-- NAVBAR ADVANCED SYSTEM -->
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="navbar-brand">
-        <h1>📊 Trading Academy</h1>
-      </div>
-      <button class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
-        <li><a href="#" class="nav-link" data-page="free-lessons">Free Lessons</a></li>
-        <li><a href="#" class="nav-link" data-page="videos">Video Library</a></li>
-        <li><a href="#" class="nav-link" data-page="contact">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Trading Academy</div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="courses">Courses</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- PAGE CONTAINER -->
-  <main id="page-content">
-    <!-- HOME PAGE -->
-    <section id="home" class="page">
-      <header id="hero" class="hero">
-        <div class="hero-content">
-          <h1 class="hero-title">Technical Analysis Mastery Course<br><small>من الأساسيات إلى المستويات المتقدمة</small></h1>
-          <p class="hero-subtitle">From Basics to Advanced Trading Schools - Beginner to Expert Level
-          <br><small>صراعة من SMC, ICT, وWyckoff بلغة عربية بسيطة</small>
-          </p>
-          <div class="hero-buttons">
-            <button class="btn btn-primary" id="enroll-btn">Enroll Now</button>
-            <button class="btn btn-secondary" id="free-lessons-btn">Free Lessons</button>
-          </div>
-        </div>
-      </header>
+    <!-- MAIN CONTENT -->
+    <main id="page-content">
+        <!-- HOME PAGE -->
+        <section id="home" class="page">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Technical Analysis Mastery</h1>
+                    <p class="hero-subtitle">Learn professional trading strategies from market fundamentals to advanced techniques</p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" id="enroll-btn">Start Learning</button>
+                        <button class="btn btn-secondary" id="explore-btn">Explore Courses</button>
+                    </div>
+                </div>
+            </div>
 
-      <section id="who-for" class="who-for">
-        <h2>Who Is This Course For?</h2>
-        <div class="cards-grid">
-          <div class="card" data-animate>
-            <h3>🎯 Beginners</h3>
-            <p>Start from scratch with zero experience. Learn Technical Analysis fundamentals in simple terms with live chart examples.</p>
-          </div>
-          <div class="card" data-animate>
-            <h3>📋 Intermediate</h3>
-            <p>Advanced trading schools: SMC, ICT, Wyckoff methods explained with practical strategies and real market analysis.</p>
-          </div>
-          <div class="card" data-animate>
-            <h3>📤 Arab Traders</h3>
-            <p>Prefer Arabic explanation with English technical terms? Full bilingual course with Algerian Arabic dialect support.</p>
-          </div>
-        </div>
-      </section>
+            <!-- FEATURES SECTION -->
+            <section class="features">
+                <h2>What You Will Learn</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>Price Action Analysis</h3>
+                        <p>Master the art of reading market movements and identifying trading opportunities through pure price action strategies.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Support & Resistance</h3>
+                        <p>Understand key levels, breakouts, and how professional traders use these concepts for consistent profits.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Advanced Methods</h3>
+                        <p>Deep dive into SMC, ICT, and Wyckoff methods used by institutional traders worldwide.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Risk Management</h3>
+                        <p>Learn the psychology of trading and implement proven risk management techniques for long-term success.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
 
-      <section id="courses" class="courses">
-        <h2>Course Curriculum</h2>
-        <div class="modules-grid">
-          <div class="module-card" data-animate>
-            <h3>🎯 Module 1: Fundamentals</h3>
-            <p>Basics of Technical Analysis & Price Action</p>
-          </div>
-          <div class="module-card" data-animate>
-            <h3>📊 Module 2: Support & Resistance</h3>
-            <p>Key Levels & Price Structure Analysis</p>
-          </div>
-          <div class="module-card" data-animate>
-            <h3>📈 Module 3: Technical Indicators</h3>
-            <p>RSI, MACD, Moving Averages & Oscillators</p>
-          </div>
-          <div class="module-card" data-animate>
-            <h3>🎨 Module 4: Pattern Recognition</h3>
-            <p>Candlestick Patterns, Chart Patterns & Fibonacci</p>
-          </div>
-          <div class="module-card" data-animate>
-            <h3>🚀 Module 5: Trading Psychology</h3>
-            <p>Risk Management & Emotional Control</p>
-          </div>
-          <div class="module-card" data-animate>
-            <h3>✅ Module 6: Advanced Strategies</h3>
-            <p>SMC, ICT, Wyckoff Methods Explained</p>
-          </div>
-        </div>
-      </section>
-    </section>
+        <!-- COURSES PAGE -->
+        <section id="courses" class="page hidden">
+            <div class="page-header">
+                <h1>Course Curriculum</h1>
+                <p>Structured learning path from beginner to advanced trader</p>
+            </div>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-level">Beginner</div>
+                    <h3>Foundation Course</h3>
+                    <p>Introduction to technical analysis, chart types, and basic indicators</p>
+                    <ul class="course-topics">
+                        <li>Candlestick Patterns</li>
+                        <li>Trend Analysis</li>
+                        <li>Moving Averages</li>
+                        <li>Volume Analysis</li>
+                    </ul>
+                    <button class="btn btn-outline">View Course</button>
+                </div>
 
-    <!-- FREE LESSONS PAGE -->
-    <section id="free-lessons" class="page hidden">
-      <div class="page-header">
-        <h1>🎁 Exclusive Free Video Lessons</h1>
-        <p>Start learning today - No credit card required!</p>
-      </div>
-      <div class="videos-grid">
-        <div class="video-card" data-video-id="dQw4w9WgXcQ" data-video-title="Introduction to Technical Analysis">
-          <div class="video-thumbnail">🎥 VIDEO</div>
-          <h3>Technical Analysis 101</h3>
-          <p>Introduction to Technical Analysis - Complete Beginner Guide</p>
-        </div>
-        <div class="video-card" data-video-id="dQw4w9WgXcQ" data-video-title="Japanese Candlesticks Explained">
-          <div class="video-thumbnail">🎥 VIDEO</div>
-          <h3>Candlestick Patterns</h3>
-          <p>Understanding Japanese Candlesticks - Part 1</p>
-        </div>
-        <div class="video-card" data-video-id="dQw4w9WgXcQ" data-video-title="Trends and Support/Resistance">
-          <div class="video-thumbnail">🎥 VIDEO</div>
-          <h3>Trends & Key Levels</h3>
-          <p>How to Identify Trends and Draw Support/Resistance Levels</p>
-        </div>
-      </div>
-      <div style="text-align: center; margin-top: 40px;">
-        <button class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2.5rem;">Enroll in Full Course - اشترك الآن</button>
-      </div>
-    </section>
+                <div class="course-card">
+                    <div class="course-level">Intermediate</div>
+                    <h3>Advanced Strategies</h3>
+                    <p>Professional trading schools and institutional strategies</p>
+                    <ul class="course-topics">
+                        <li>SMC Concepts</li>
+                        <li>ICT Methodology</li>
+                        <li>Order Flow</li>
+                        <li>Market Structure</li>
+                    </ul>
+                    <button class="btn btn-outline">View Course</button>
+                </div>
 
-    <!-- VIDEOS PAGE -->
-    <section id="videos" class="page hidden">
-      <div class="page-header">
-        <h1>📚 Complete Video Library</h1>
-        <p>All video lessons organized by level - Access full course content</p>
-      </div>
-      <div class="videos-grid">
-        <div class="video-card" data-video-id="dQw4w9WgXcQ" data-video-title="Level 1 - Basics">
-          <div class="video-thumbnail">🎯 LEVEL 1</div>
-          <h3>Foundation Course</h3>
-          <p>Complete beginner fundamentals</p>
-        </div>
-        <div class="video-card" data-video-id="dQw4w9WgXcQ" data-video-title="Level 2 - Intermediate">
-          <div class="video-thumbnail">📋 LEVEL 2</div>
-          <h3>Intermediate Strategies</h3>
-          <p>Advanced technical analysis</p>
-        </div>
-        <div class="video-card" data-video-id="dQw4w9WgXcQ" data-video-title="Level 3 - Expert">
-          <div class="video-thumbnail">🚀 LEVEL 3</div>
-          <h3>Expert Methods</h3>
-          <p>SMC, ICT, Wyckoff Pro Techniques</p>
-        </div>
-      </div>
-    </section>
+                <div class="course-card">
+                    <div class="course-level">Advanced</div>
+                    <h3>Professional Trading</h3>
+                    <p>Master-level techniques and live trading analysis</p>
+                    <ul class="course-topics">
+                        <li>Wyckoff Method</li>
+                        <li>Confluence Analysis</li>
+                        <li>Live Trading</li>
+                        <li>Portfolio Management</li>
+                    </ul>
+                    <button class="btn btn-outline">View Course</button>
+                </div>
+            </div>
+        </section>
 
-    <!-- CONTACT PAGE -->
-    <section id="contact" class="page hidden">
-      <div class="page-header">
-        <h1>📱 Get in Touch</h1>
-        <p>Have questions? Connect with us on social media or send a message</p>
-      </div>
-      <form id="contact-form" class="contact-form">
-        <input type="text" id="contact-name" placeholder="Your Name" required>
-        <input type="email" id="contact-email" placeholder="Your Email" required>
-        <textarea id="contact-message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
-      <div class="social-section">
-        <h3>🌟 Follow Us On Social Media</h3>
-        <div class="social-links">
-          <a href="#" data-social="telegram" class="social-btn">📱 Telegram</a>
-          <a href="#" data-social="discord" class="social-btn">💬 Discord</a>
-          <a href="#" data-social="youtube" class="social-btn">▶️ YouTube</a>
-          <a href="#" data-social="twitter" class="social-btn">🔔 Twitter</a>
+        <!-- ABOUT PAGE -->
+        <section id="about" class="page hidden">
+            <div class="page-header">
+                <h1>About This Course</h1>
+                <p>Professional education in technical analysis trading</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Learn Technical Analysis?</h2>
+                    <p>Technical analysis is the foundation of successful trading. Whether you're trading forex, stocks, or cryptocurrencies, understanding how to read charts and identify trends is essential.</p>
+                    <p>Our comprehensive curriculum covers everything from basic concepts to institutional-level trading strategies used by professional traders and hedge funds worldwide.</p>
+                    
+                    <h3>Course Features</h3>
+                    <ul class="about-list">
+                        <li>Self-paced learning with lifetime access</li>
+                        <li>Live trading sessions and market analysis</li>
+                        <li>Professional trading journal templates</li>
+                        <li>Community support and mentorship</li>
+                        <li>Real-world case studies and examples</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <section id="contact" class="page hidden">
+            <div class="page-header">
+                <h1>Get In Touch</h1>
+                <p>Have questions? We're here to help</p>
+            </div>
+            
+            <div class="contact-container">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Trading Academy. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
         </div>
-      </div>
-    </section>
-  </main>
+    </footer>
 
-  <!-- MODAL -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="modal-close" id="modal-close">&times;</span>
-      <h2 id="modal-title"></h2>
-      <p id="modal-message"></p>
-      <button id="close-modal" class="btn btn-primary">OK</button>
-    </div>
-  </div>
-
-  <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
