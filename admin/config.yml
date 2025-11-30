@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: HaouzDataHub/trading-course-landing 
+  repo: HaouzDataHub/trading-course-landing
   branch: main
   auth_endpoint: api/auth
   cms_label_prefix: netlify-cms/
@@ -9,7 +9,6 @@ media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
-
   # ==================== الإعدادات العامة للموقع ====================
   - name: "site_settings"
     label: "إعدادات الموقع | Site Settings"
@@ -18,11 +17,11 @@ collections:
         label: "معلومات الموقع العامة"
         name: "site_config"
         fields:
-          - { label: "اسم الدورة", name: "course_title", widget: "string", default: "دورة التحليل الفني" }
-          - { label: "Course Title (EN)", name: "course_title_en", widget: "string", default: "Technical Analysis Course" }
-          - { label: "وصف الدورة", name: "course_description", widget: "text" }
-          - { label: "Course Description (EN)", name: "course_description_en", widget: "text" }
-          - { label: "السعر (بالدولار)", name: "course_price", widget: "number", default: 99 }
+          - { label: "اسم الدورة", name: "course_title", widget: "string", default: "برنامج إتقان التحليل الفني" }
+          - { label: "Course Title (EN)", name: "course_title_en", widget: "string", default: "Technical Analysis Mastery Program" }
+          - { label: "وصف الدورة", name: "course_description", widget: "text", default: "برنامج تعليمي احترافي يربط بين أساسيات التحليل الفني وأساليبه المؤسسية، بخطوات عملية واضحة ومحتوى قابل للتطبيق في السوق الحقيقي." }
+          - { label: "Course Description (EN)", name: "course_description_en", widget: "text", default: "A professional curriculum that connects technical analysis foundations with institutional concepts (SMC, ICT, Wyckoff), with clear, practical steps for real market application." }
+          - { label: "السعر (بالدولار)", name: "course_price", widget: "number", default: 149 }
           - { label: "العملة", name: "currency", widget: "select", options: ["USD", "DZD", "TND", "MAD"], default: "USD" }
           - { label: "رابط تليغرام", name: "telegram_link", widget: "string" }
           - { label: "رابط ديسكورد", name: "discord_link", widget: "string" }
@@ -37,11 +36,11 @@ collections:
         label: "محتوى الهيرو"
         name: "hero_content"
         fields:
-          - { label: "العنوان الرئيسي", name: "title", widget: "string", default: "دورة التحليل الفني" }
-          - { label: "Main Title (EN)", name: "title_en", widget: "string" }
-          - { label: "الوصف الفرعي", name: "subtitle", widget: "text" }
-          - { label: "Subtitle (EN)", name: "subtitle_en", widget: "text" }
-          - { label: "صورة البانر", name: "banner_image", widget: "image" }
+          - { label: "العنوان الرئيسي", name: "title", widget: "string", default: "برنامج إتقان التحليل الفني" }
+          - { label: "Main Title (EN)", name: "title_en", widget: "string", default: "Technical Analysis Mastery Program" }
+          - { label: "الوصف الفرعي", name: "subtitle", widget: "text", default: "من قراءة الشموع وهيكل السوق إلى مدارس SMC و ICT و Wyckoff، بأسلوب بسيط ومباشر." }
+          - { label: "Subtitle (EN)", name: "subtitle_en", widget: "text", default: "From price action and market structure to SMC, ICT and Wyckoff, taught in a clear, structured way." }
+          - { label: "صورة البانر", name: "banner_image", widget: "image", required: false }
 
   # ==================== المنهج والوحدات ====================
   - name: "modules"
@@ -50,7 +49,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "رقم الوحدة", name: "module_number", widget: "number", min: 1, max: 10 }
+      - { label: "رقم الوحدة", name: "module_number", widget: "number", min: 1, max: 20 }
       - { label: "اسم الوحدة", name: "module_title", widget: "string" }
       - { label: "Module Title (EN)", name: "module_title_en", widget: "string" }
       - { label: "وصف الوحدة", name: "description", widget: "text" }
@@ -93,7 +92,7 @@ collections:
       - { label: "الشهادة", name: "testimonial_text", widget: "text" }
       - { label: "Testimonial (EN)", name: "testimonial_text_en", widget: "text" }
       - { label: "التقييم (من 5)", name: "rating", widget: "select", options: ["5", "4.5", "4", "3.5", "3"], default: "5" }
-      - { label: "صورة الطالب", name: "student_image", widget: "image" }
+      - { label: "صورة الطالب", name: "student_image", widget: "image", required: false }
       - { label: "نشط", name: "active", widget: "boolean", default: true }
 
   # ==================== الأسئلة الشائعة ====================
@@ -124,4 +123,3 @@ collections:
       - { label: "شرح معمق", name: "detailed_description", widget: "markdown" }
       - { label: "Detailed Explanation (EN)", name: "detailed_description_en", widget: "markdown" }
       - { label: "المفاهيم الأساسية", name: "key_concepts", widget: "list", field: { label: "مفهوم", name: "concept", widget: "string" } }
-
