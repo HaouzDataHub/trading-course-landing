@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: VOLCA/trading-course-landing
+  repo: HaouzDataHub/trading-course-landing 
   branch: main
   auth_endpoint: api/auth
   cms_label_prefix: netlify-cms/
