@@ -1,149 +1,156 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دورة التحليل الفني | Technical Analysis Course - المغرب العربي</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دورة التحليل الفني | Technical Analysis Course</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- NAVBAR ADVANCED SYSTEM -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <h1>Trading Academy</h1>
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#" class="nav-link active" data-page="home">الرئيسية</a></li>
+        <li><a href="#" class="nav-link" data-page="free-lessons">الدروس المجانية</a></li>
+        <li><a href="#" class="nav-link" data-page="videos">الفيديوهات</a></li>
+        <li><a href="#" class="nav-link" data-page="contact">اتصل بنا</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- 1. قسم الهيرو -->
-    <header id="hero">
-        <h1>دورة التحليل الفني <span class="en">Technical Analysis</span></h1>
-        <p>من الأساسيات إلى المدارس المتقدمة | <span class="en">From Basics to Advanced Schools</span></p>
-        <p class="subtitle">برنامج مكثّف باللهجة الجزائرية للمغرب العربي، يجمع بين <span class="en">Price Action, Candlestick Patterns</span> والمؤشرات إلى <span class="en">SMC, ICT, Wyckoff</span> والاستراتيجيات العملية.</p>
-        <div class="button-group">
-            <a href="#free-lessons" class="btn btn-primary">شاهد دروسًا مجانية</a>
-            <a href="#final-cta" class="btn btn-secondary">انضم إلى الدورة</a>
+  <!-- PAGE CONTAINER -->
+  <main id="page-content">
+    <!-- HOME PAGE -->
+    <section id="home" class="page">
+      <header id="hero" class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">دورة التحليل الفني <span class="en">Technical Analysis</span></h1>
+          <p class="hero-subtitle">من الأساسيات إلى المستويات المتقدمة | From Basics to Advanced Schools</p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" id="enroll-btn">ابدأ الآن</button>
+            <button class="btn btn-secondary" id="free-lessons-btn">دروس مجانية</button>
+          </div>
         </div>
-    </header>
+      </header>
 
-    <!-- 2. لمن هذه الدورة -->
-    <section id="who-for">
-        <h2>لمن هذه الدورة؟ <span class="en">Who Is This For?</span></h2>
-        <ul>
-            <li><strong>المبتدئون</strong> <span class="en">(Beginners)</span>: من يريدون فهم <span class="en">Technical Analysis</span> من الصفر بدون تعقيد.</li>
-            <li><strong>المتداولون المتقدمون</strong> <span class="en">(Intermediate Traders)</span>: من لديهم خبرة بسيطة ويريدون الانتقال إلى مدارس متقدّة مثل <span class="en">SMC, ICT</span>.</li>
-            <li><strong>أبناء المغرب العربي</strong> <span class="en">(Arab Traders)</span>: الذين يفضّلون شرحًا باللهجة الجزائرية مع أمثلة واضحة على الشارت <span class="en">(Chart)</span>.</li>
-        </ul>
-    </section>
-
-    <!-- 3. ماذا ستتعلم -->
-    <section id="what-you-learn">
-        <h2>ماذا ستتعلم داخل الدورة؟ <span class="en">Course Content</span></h2>
-        <div class="modules-list">
-            <div class="module">
-                <h3>الوحدة 1: الأساسيات</h3>
-                <p><span class="en">Basics of Technical Analysis</span></p>
-                <p>أنواع الأسواق، الشموع اليابانية <span class="en">(Japanese Candlesticks)</span>، القمم والقيعان <span class="en">(Peaks & Troughs)</span>، الحركة السعرية الأساسية <span class="en">(Basic Price Action)</span>.</p>
-            </div>
-
-            <div class="module">
-                <h3>الوحدة 2: الدعم والمقاومة</h3>
-                <p><span class="en">Support & Resistance Levels</span></p>
-                <p>تحديد المناطق المهمة، الحركة السعرية المتقدمة <span class="en">(Price Action Patterns)</span>، ردود الفعل والاختراقات <span class="en">(Reactions & Breakouts)</span>.</p>
-            </div>
-
-            <div class="module">
-                <h3>الوحدة 3: المؤشرات الفنية</h3>
-                <p><span class="en">Technical Indicators</span></p>
-                <p>المتوسطات المتحركة <span class="en">(Moving Averages)</span>، Bollinger Bands، Ichimoku، RSI، MACD وغيرها من المؤشرات الأساسية والمتقدمة.</p>
-            </div>
-
-            <div class="module">
-                <h3>الوحدة 4: فيبوناتشي</h3>
-                <p><span class="en">Fibonacci Levels & Ratios</span></p>
-                <p>أدوات فيبوناتشي وكيفية استخدامها عمليًا <span class="en">(Fibonacci Retracement, Fibonacci Extensions)</span> لتحديد أهداف الحركة السعرية.</p>
-            </div>
-
-            <div class="module">
-                <h3>الوحدة 5: Smart Money Concepts</h3>
-                <p><span class="en">SMC - Market Structure</span></p>
-                <p>مدرسة المال الذكي، هيكل السوق <span class="en">(Market Structure)</span>، تحديد نوايا المؤسسات <span class="en">(Institutional Intent)</span>، مناطق السيولة <span class="en">(Liquidity Zones)</span>.</p>
-            </div>
-
-            <div class="module">
-                <h3>الوحدة 6: أنماط الهارمونيك</h3>
-                <p><span class="en">Harmonic Patterns - XABCD</span></p>
-                <p>مدرسة الهارمونيك، الأنماط المختلفة مثل <span class="en">Gartley, Butterfly, Crab, Bat</span>، وكيفية استخدامها للتنبؤ بانعكاسات السوق.</p>
-            </div>
-
-            <div class="module">
-                <h3>الوحدة 7: نظرية وايكوف</h3>
-                <p><span class="en">Wyckoff Theory - Market Phases</span></p>
-                <p>مراحل الحركة السعرية عند وايكوف <span class="en">(Accumulation, Markup, Distribution, Markdown)</span>، فهم سلوك المؤسسات والتراكم والتوزيع.</p>
-            </div>
-
-            <div class="module">
-                <h3>الوحدة 8: مدرسة ICT</h3>
-                <p><span class="en">ICT - Inner Circle Trading</span></p>
-                <p>مدرسة الدائرة الداخلية، مناطق الطلب والعرض <span class="en">(Supply & Demand Zones)</span>، مفاهيم السيولة والمناطق المؤسسية <span class="en">(Institutional Order Flow)</span>.</p>
-            </div>
-
-            <div class="module">
-                <h3>الوحدة 9: الاستراتيجيات العملية</h3>
-                <p><span class="en">Live Trading Strategies</span></p>
-                <p>استراتيجياتك الخاصة، تطبيق عملي مباشر على الشارت <span class="en">(Live Chart Analysis on Miro)</span>، إدارة المخاطر <span class="en">(Risk Management)</span>، تسجيل التداولات <span class="en">(Trade Journal)</span>.</p>
-            </div>
+      <section id="who-for" class="who-for">
+        <h2>لمن هذه الدورة؟</h2>
+        <div class="cards-grid">
+          <div class="card" data-animate>
+            <h3>المبتدئون (Beginners)</h3>
+            <p>من الصفر بدون تعقيد Technical Analysis تغطي المفاهيم الأساسية</p>
+          </div>
+          <div class="card" data-animate>
+            <h3>المتقدمون (Intermediate)</h3>
+            <p>يريدون الانتقال إلى مدارس متقدمة مثل SMC, ICT</p>
+          </div>
+          <div class="card" data-animate>
+            <h3>متداولو العرب (Arab Traders)</h3>
+            <p>يفضلون شرحا بلغة جزائرية مع أمثلة على الشارت</p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- 4. دروس مجانية -->
-    <section id="free-lessons">
-        <h2>شاهد دروسًا مجانية قبل أن تقرر <span class="en">Free Preview Lessons</span></h2>
-        <p>اخترنا لك مجموعة دروس مجانية لتتعرف على أسلوب الشرح والعمق المقدّم:</p>
-        <ul class="free-lessons-list">
-            <li>
-                <strong>درس مجاني 1:</strong> مقدمة عن الشموع والحركة السعرية
-                <span class="en">(Introduction to Candlesticks & Price Action)</span>
-            </li>
-            <li>
-                <strong>درس مجاني 2:</strong> مثال عملي على تحديد مناطق الدعم والمقاومة
-                <span class="en">(Practical Example: Support & Resistance)</span>
-            </li>
-            <li>
-                <strong>درس مجاني 3:</strong> مقتطف متقدم من مدرسة SMC
-                <span class="en">(Preview: SMC Market Structure Analysis)</span>
-            </li>
-        </ul>
-    </section>
-
-    <!-- 5. المنهج المفصل -->
-    <section id="detailed-curriculum">
-        <h2>تفاصيل المنهج والمدارس <span class="en">Detailed Curriculum Breakdown</span></h2>
-        <p>الدورة تجمع بين المدارس التقليدية والحديثة للتحليل الفني. كل مدرسة لها فلسفتها الخاصة وطريقة رؤيتها للسوق:</p>
-        <ul style="list-style: none; padding: 0;">
-            <li style="margin: 20px 0; padding: 15px; background-color: #2d2d2d; border-radius: 5px;">
-                <strong style="color: #00d4ff;">Candlestick Analysis:</strong> تحليل الشموع كأداة أساسية لفهم مشاعر السوق ونوايا المتداولين في كل شمعة.
-            </li>
-            <li style="margin: 20px 0; padding: 15px; background-color: #2d2d2d; border-radius: 5px;">
-                <strong style="color: #00d4ff;">Price Action:</strong> قراءة حركة السعر مباشرة بدون مؤشرات، فهم كل حركة وما تخبرك عنه.
-            </li>
-            <li style="margin: 20px 0; padding: 15px; background-color: #2d2d2d; border-radius: 5px;">
-                <strong style="color: #00d4ff;">SMC (Smart Money Concepts):</strong> فهم كيفية تحرك أموال المؤسسات والبنوك في السوق وكيفية الاستفادة من هذه الحركات.
-            </li>
-            <li style="margin: 20px 0; padding: 15px; background-color: #2d2d2d; border-radius: 5px;">
-                <strong style="color: #00d4ff;">Harmonic Patterns:</strong> أنماط رياضية متقدمة توضح انعكاسات السوق بدقة عالية جدًا.
-            </li>
-            <li style="margin: 20px 0; padding: 15px; background-color: #2d2d2d; border-radius: 5px;">
-                <strong style="color: #00d4ff;">Wyckoff Theory:</strong> نظرية كلاسيكية قديمة لكن فعّالة جدًا، تشرح كل مراحل حركة السوق من البداية إلى النهاية.
-            </li>
-            <li style="margin: 20px 0; padding: 15px; background-color: #2d2d2d; border-radius: 5px;">
-                <strong style="color: #00d4ff;">ICT (Inner Circle Trading):</strong> مدرسة حديثة تركز على فهم تحركات السيولة والمناطق المؤسسية العميقة.
-            </li>
-        </ul>
-    </section>
-
-    <!-- 6. شهادات الطلاب -->
-    <section id="testimonials">
-        <h2>آراء وتجارب الطلاب السابقين <span class="en">Student Testimonials</span></h2>
-        <p style="color: #b0b0b0; margin-bottom: 30px;">في هذا القسم سيتم عرض شهادات حقيقية لطلاب سابقين عملوا معك من قبل وحققوا تقدمًا في فهمهم للتحليل الفني.</p>
-        <div class="testimonials-placeholder" style="padding: 30px; background-color: #2d2d2d; border-radius: 5px; text-align: center; color: #b0b0b0;">
-            تحديث قريب: سيتم إضافة شهادات الطلاب من لوحة التحكم
+      <section id="courses" class="courses">
+        <h2>محتوى الدورة الكامل</h2>
+        <div class="modules-grid">
+          <div class="module-card" data-animate>
+            <h3>🎯 الوحدة 1: الأساسيات</h3>
+            <p>Basics of Technical Analysis</p>
+          </div>
+          <div class="module-card" data-animate>
+            <h3>📊 الوحدة 2: الدعم والمقاومة</h3>
+            <p>Support & Resistance Levels</p>
+          </div>
+          <div class="module-card" data-animate>
+            <h3>📈 الوحدة 3: المؤشرات الفنية</h3>
+            <p>Technical Indicators</p>
+          </div>
+          <div class="module-card" data-animate>
+            <h3>🎨 الوحدة 4: الفيبوناتشي</h3>
+            <p>Fibonacci Patterns</p>
+          </div>
         </div>
+      </section>
     </section>
 
-    <!-- 7. الأسئلة الشائعة -->
-    <section id="faq">
-        <h2>الأسئلة الشائعة
+    <!-- FREE LESSONS PAGE -->
+    <section id="free-lessons" class="page hidden">
+      <h1>الدروس المجانية الحصرية</h1>
+      <div class="videos-grid">
+        <div class="video-card" data-video-id="dQw4w9WgXcQ" data-video-title="مقدمة في التحليل الفني">
+          <div class="video-thumbnail">📹</div>
+          <h3>مقدمة في التحليل الفني</h3>
+          <p>Introduction to Technical Analysis</p>
+        </div>
+        <div class="video-card" data-video-id="dQw4w9WgXcQ" data-video-title="الشموع اليابانية">
+          <div class="video-thumbnail">📹</div>
+          <h3>الشموع اليابانية</h3>
+          <p>Japanese Candlesticks</p>
+        </div>
+        <div class="video-card" data-video-id="dQw4w9WgXcQ" data-video-title="الاتجاهات">
+          <div class="video-thumbnail">📹</div>
+          <h3>الاتجاهات والخطوط</h3>
+          <p>Trends and Lines</p>
+        </div>
+      </div>
+      <button class="btn btn-primary" style="margin-top: 30px;">اشترك الآن</button>
+    </section>
+
+    <!-- VIDEOS PAGE -->
+    <section id="videos" class="page hidden">
+      <h1>مكتبة الفيديوهات الكاملة</h1>
+      <div class="videos-grid">
+        <div class="video-card" data-video-id="dQw4w9WgXcQ" data-video-title="الدرس 1">
+          <div class="video-thumbnail">📺 Level 1</div>
+          <h3>المستوى الأول الأساسي</h3>
+        </div>
+        <div class="video-card" data-video-id="dQw4w9WgXcQ" data-video-title="الدرس 2">
+          <div class="video-thumbnail">📺 Level 2</div>
+          <h3>المستوى الثاني المتقدم</h3>
+        </div>
+        <div class="video-card" data-video-id="dQw4w9WgXcQ" data-video-title="الدرس 3">
+          <div class="video-thumbnail">📺 Level 3</div>
+          <h3>المستوى الثالث المحترف</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact" class="page hidden">
+      <h1>اتصل بنا</h1>
+      <form id="contact-form" class="contact-form">
+        <input type="text" id="contact-name" placeholder="اسمك" required>
+        <input type="email" id="contact-email" placeholder="بريدك الإلكتروني" required>
+        <textarea id="contact-message" placeholder="رسالتك" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">إرسال</button>
+      </form>
+      <div class="social-links">
+        <a href="#" data-social="telegram" class="social-btn">📱 Telegram</a>
+        <a href="#" data-social="discord" class="social-btn">💬 Discord</a>
+        <a href="#" data-social="youtube" class="social-btn">▶️ YouTube</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2 id="modal-title"></h2>
+      <p id="modal-message"></p>
+      <button id="close-modal" class="btn btn-primary">حسناً</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
