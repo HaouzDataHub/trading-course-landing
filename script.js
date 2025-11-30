@@ -3,6 +3,7 @@ const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 
+// Hamburger Menu Toggle
 if (hamburger) {
   hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
@@ -10,6 +11,7 @@ if (hamburger) {
   });
 }
 
+// Navbar Navigation Links
 navLinks.forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
@@ -20,6 +22,7 @@ navLinks.forEach(link => {
   });
 });
 
+// Page Navigation Function
 function navigateTo(page) {
   document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
   const selectedPage = document.getElementById(page);
@@ -29,30 +32,49 @@ function navigateTo(page) {
   }
 }
 
-// Video Player
+// Hero Section Buttons - Enroll Now Button
+const enrollBtn = document.getElementById('enroll-btn');
+if (enrollBtn) {
+  enrollBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    alert('Thank you for your interest! Course enrollment coming soon.');
+  });
+}
+
+// Hero Section Buttons - Free Lessons Button
+const freeLessonsBtn = document.getElementById('free-lessons-btn');
+if (freeLessonsBtn) {
+  freeLessonsBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    navigateTo('free-lessons');
+    navMenu.classList.remove('active');
+    hamburger.classList.remove('active');
+  });
+}
+
+// Video Player - Click to Play
 document.querySelectorAll('[data-video-id]').forEach(video => {
   video.style.cursor = 'pointer';
   video.addEventListener('click', function() {
     const videoId = this.getAttribute('data-video-id');
     const modal = document.createElement('div');
     modal.className = 'video-modal active';
-    modal.innerHTML = `<div class='video-content'><button class='close'>&times;</button><iframe width='100%' height='600' src='https://www.youtube.com/embed/${videoId}' frameborder='0' allowfullscreen></iframe></div>`;
+    modal.innerHTML = `<div class='video-content'><button class='close'>×</button><iframe width='100%' height='600' src='https://www.youtube.com/embed/${videoId}' frameborder='0' allowfullscreen></iframe></div>`;
     document.body.appendChild(modal);
     modal.querySelector('.close').onclick = () => modal.remove();
     modal.onclick = (e) => e.target === modal && modal.remove();
   });
 });
 
-// Contact Form
+// Contact Form Submission
 const form = document.getElementById('contact-form');
 if (form) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('شكراً! تم استقبال رسالتك');
+    alert('Thank you! Your message has been received. We will contact you soon.');
     form.reset();
   });
 }
 
-// Init
+// Initialize - Load Home Page on Page Load
 navigateTo('home');
-navigateT o('home');
