@@ -718,4 +718,15 @@ p {
   .contact-container {
     padding-inline: 1.1rem;
   }
+  /* Arabic helper lines – subtle and smaller */
+.text-ar {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: rgba(156, 163, 175, 0.9);
+  font-family: "Cairo", system-ui, sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
 }
