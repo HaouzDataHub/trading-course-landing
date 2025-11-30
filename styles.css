@@ -1,0 +1,256 @@
+/* ============ متغيرات الألوان والخطوط ============ */
+:root {
+    --primary-color: #1a1a1a;        /* رمادي داكن جدًا (خلفية) */
+    --secondary-color: #2d2d2d;      /* رمادي أفتح قليلاً */
+    --accent-color: #00d4ff;          /* أزرق فاتح (CTA) */
+    --text-primary: #ffffff;          /* أبيض (النصوص الرئيسية) */
+    --text-secondary: #b0b0b0;        /* رمادي فاتح (النصوص الثانوية) */
+    --border-color: #404040;          /* رمادي للحدود */
+}
+
+/* ============ إعدادات عامة ============ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;          /* Smooth scroll للروابط */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* ============ قسم الهيرو ============ */
+#hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hero button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 12px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #00a8cc;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+}
+
+/* ============ الأقسام العامة ============ */
+section {
+    padding: 60px 20px;
+    border-bottom: 1px solid var(--border-color);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+section h3 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+section p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+/* ============ قسم "لمن هذه الدورة" ============ */
+#who-for ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#who-for li {
+    padding: 15px 20px;
+    margin: 10px 0;
+    background-color: var(--secondary-color);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 3px;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+#who-for li:hover {
+    background-color: #353535;
+    padding-left: 30px;
+}
+
+/* ============ قسم "ماذا ستتعلم" ============ */
+#what-you-learn ol {
+    padding-left: 20px;
+    color: var(--text-secondary);
+}
+
+#what-you-learn li {
+    margin: 15px 0;
+    padding: 10px 0 10px 20px;
+    border-left: 2px solid var(--accent-color);
+    padding-left: 20px;
+}
+
+#what-you-learn li:hover {
+    color: var(--accent-color);
+}
+
+/* ============ قسم "الدروس المجانية" ============ */
+#free-lessons ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#free-lessons li {
+    padding: 12px 15px;
+    margin: 10px 0;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+#free-lessons li:hover {
+    background-color: #353535;
+    color: var(--accent-color);
+    transform: translateX(10px);
+}
+
+/* ============ قسم "المنهج المفصل" ============ */
+#detailed-curriculum {
+    background-color: var(--secondary-color);
+}
+
+/* ============ قسم "الشهادات" ============ */
+#testimonials {
+    background-color: var(--secondary-color);
+}
+
+/* ============ قسم "الأسئلة الشائعة" ============ */
+#faq details {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+
+#faq summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+#faq summary:hover {
+    color: #00a8cc;
+}
+
+#faq details[open] summary {
+    color: #00a8cc;
+}
+
+#faq details p {
+    margin-top: 15px;
+    color: var(--text-secondary);
+}
+
+/* ============ قسم الدعوة النهائية ============ */
+#final-cta {
+    text-align: center;
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+}
+
+#final-cta h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+#final-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+#final-cta button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#final-cta button:hover {
+    background-color: #00a8cc;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 212, 255, 0.4);
+}
+
+/* ============ توافقية الأجهزة المحمولة ============ */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    #hero button {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    #final-cta button {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
