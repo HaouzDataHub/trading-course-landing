@@ -75,6 +75,14 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+// Pricing Button
+const pricingBtn = document.getElementById("pricing-btn");
+if (pricingBtn) {
+  pricingBtn.addEventListener("click", () => {
+    alert("سيتم توجيهك لصفحة الدفع الآمنة. شكراً لثقتك!");
+  });
+}
+
 
 // 2025 Micro-interactions: section reveal on scroll
 function initScrollAnimations() {
