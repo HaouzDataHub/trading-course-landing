@@ -54,4 +54,5 @@ if (form) {
 }
 
 // Init
+navigateTo('home');
 navigateT o('home');
