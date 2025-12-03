@@ -1,444 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Technical Analysis Mastery</title>
-    <meta
-      name="description"
-      content="Professional technical analysis course: price action, SMC, ICT, Wyckoff, and risk management for serious traders."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <!-- Meta core -->
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
+  <meta
+    name="description"
+    content="Professional trading course & free lessons in Arabic and English to master market structure, price action, and risk management."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Google Fonts: DM Sans + Playfair Display + Cairo (Arabic) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Open Graph for sharing -->
+  <meta property="og:title" content="Pro Trading Course" />
+  <meta
+    property="og:description"
+    content="Learn professional trading with a structured course, live-style lessons, and powerful risk management."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://haouzdatahub.github.io/" />
+  <meta property="og:image" content="assets/og-image.jpg" />
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-brand">
-          TA<span>Mastery</span>
-        </div>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico" />
 
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
-          <li><a href="#" class="nav-link" data-page="courses">Courses</a></li>
-          <li><a href="#" class="nav-link" data-page="about">About</a></li>
-          <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+  <title>Pro Trading Course | Home</title>
+
+  <!-- Fonts: DM Sans + Cairo + Playfair -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Cairo:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ================= Navbar ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand" aria-label="Trading brand logo">
+        TRADING<span>EDGE</span>
+      </a>
+
+      <button
+        id="hamburger"
+        class="hamburger"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav aria-label="Main navigation">
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+          <li><a href="#courses" class="nav-link" data-page="courses">Course</a></li>
+          <li><a href="#free-lessons" class="nav-link" data-page="free-lessons">Free lessons</a></li>
+          <li><a href="#pricing" class="nav-link" data-page="pricing">Pricing</a></li>
+          <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
 
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
-
-    <!-- HOME PAGE -->
-    <main id="home" class="page">
-      <section class="hero">
+  <!-- ================= HOME / HERO ================= -->
+  <main>
+    <section id="home" class="page">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-inner">
           <div class="hero-badge">
             <span class="hero-badge-dot"></span>
-            Professional Trading Curriculum
+            <span>Professional price action program</span>
           </div>
 
-          <h1>
-            Technical Analysis
-            <span>Mastery Program</span>
+          <h1 id="hero-title">
+            Master <span>Trading Structure</span> & Price Action
           </h1>
 
           <p class="hero-ar">
-            برنامج احترافي لتعلّم <strong>التحليل الفني</strong> من الأساسيات حتى
-            أساليب المؤسسات، بخطوات عملية وواضحة.
+            دورة احترافية لفهم حركة السعر، هيكل السوق، وإدارة رأس المال بأسلوب بسيط وعميق.
           </p>
 
           <p class="hero-subtitle">
-            Learn institutional-grade technical analysis: price action, market
-            structure, liquidity, SMC, ICT and Wyckoff, combined with strict
-            risk management and trading psychology.
+            A clean, indicator-light trading framework that helps you read naked charts, understand
+            momentum shifts, and manage risk with discipline.
           </p>
 
           <div class="hero-actions">
             <button id="enroll-btn" class="btn btn-primary">
-              Enroll Now
+              Start full program
             </button>
             <button id="explore-btn" class="btn btn-secondary">
-              Explore Curriculum
+              Explore modules
             </button>
+          </div>
+
+          <!-- Hero stats -->
+          <div class="hero-stats" aria-label="Course highlights">
+            <div class="hero-stat-item">
+              <span class="hero-stat-label">Structured modules</span>
+              <span class="hero-stat-value">6+</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-label">Live-style lessons</span>
+              <span class="hero-stat-value">20+</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-label">Risk frameworks</span>
+              <span class="hero-stat-value">3 Core</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Key Outcomes / Features -->
-      <section class="features">
-        <h2>What You Will Master</h2>
-        <p class="features-subtitle">
-          A complete roadmap from raw market structure to advanced institutional
-          concepts.
-        </p>
-        <p class="section-ar">
-          مسار متكامل يبدأ من قراءة حركة السعر البسيطة وصولاً إلى أساليب
-          المتداولين المحترفين والمؤسسات.
-        </p>
+      <!-- ================= Features ================= -->
+      <section class="features" aria-labelledby="features-title">
+        <div class="features-header">
+          <h2 id="features-title">Designed for serious learners</h2>
+          <p class="features-subtitle">
+            A focused, distraction‑free trading curriculum that respects your time, attention, and capital.
+          </p>
+          <p class="section-ar">
+            محتوى منظم بدون تعقيد، يبني فهمك خطوة بخطوة من الأساس إلى الاحتراف.
+          </p>
+        </div>
 
         <div class="features-grid">
           <article class="feature-item">
-            <div class="feature-tag">Price Action</div>
-            <h3>Market Structure & Momentum</h3>
+            <div class="feature-tag">
+              <span></span>Market Structure
+            </div>
+            <h3>Read the chart like a narrative</h3>
             <p>
-              Learn to read naked charts, identify swing points, trends, and
-              shifts in momentum without relying on lagging indicators.
-            </p>
-            <p class="text-ar">
-              فهم هيكل السوق (Market Structure) وكيفية قراءة القمم والقيعان والترند
-              مباشرة من حركة السعر بدون مؤشرات.
+              Learn to spot swing points, breaks of structure, and trend shifts without being
+              dependent on lagging indicators.
             </p>
           </article>
 
           <article class="feature-item">
-            <div class="feature-tag">Liquidity & Zones</div>
-            <h3>Support, Resistance & Liquidity</h3>
+            <div class="feature-tag">
+              <span></span>Risk Management
+            </div>
+            <h3>Protect your capital first</h3>
             <p>
-              Build clean support/resistance maps, liquidity pools, and
-              high-probability zones where price is likely to react.
-            </p>
-            <p class="text-ar">
-              رسم مناطق دعم ومقاومة واضحة، وتحديد مناطق السيولة التي تتحرك نحوها
-              الأسعار غالبًا لاصطياد الفرص بدقة.
+              Apply clear risk per trade, position sizing, and daily loss limits that keep you in
+              the game long enough to grow.
             </p>
           </article>
 
           <article class="feature-item">
-            <div class="feature-tag">Institutional</div>
-            <h3>SMC, ICT & Wyckoff</h3>
+            <div class="feature-tag">
+              <span></span>Execution
+            </div>
+            <h3>From idea to executed trade</h3>
             <p>
-              Go deep into the logic behind SMC, ICT and Wyckoff to understand
-              how smart money engineers price.
-            </p>
-            <p class="text-ar">
-              تعلّم منطق <span dir="ltr">SMC / ICT / Wyckoff</span> وكيف يتم
-              تحريك السوق من قبل السيولة الكبيرة والمؤسسات.
+              Translate a chart reading into a structured trading plan: entry, stop, targets, and
+              management rules.
             </p>
           </article>
 
           <article class="feature-item">
-            <div class="feature-tag">Risk & Mindset</div>
-            <h3>Risk Management & Psychology</h3>
+            <div class="feature-tag">
+              <span></span>Mindset
+            </div>
+            <h3>Consistent behaviour, not luck</h3>
             <p>
-              Design a robust risk model, position sizing rules, and professional
-              trading routines that protect your capital.
-            </p>
-            <p class="text-ar">
-              بناء خطة إدارة مخاطر واضحة، حجم عقد مناسب، وروتين تداول محترف
-              يحافظ على رأس المال ويقلّل من الأخطاء العاطفية.
+              Build discipline, avoid over‑trading, and understand the psychological traps that
+              destroy otherwise good systems.
             </p>
           </article>
         </div>
       </section>
-            <!-- Pricing Section -->
-      <section class="pricing-section">
-        <div class="page-header">
-          <h1>Investment & Enrollment</h1>
-          <p class="section-ar">
-            استثمار في مهارة تدوم مدى الحياة، مع ضمان استرداد المبلغ خلال 30 يوم
-            إذا لم تكن راضياً.
-          </p>
-        </div>
+    </section>
 
-        <div class="pricing-container">
-          <div class="pricing-card">
-            <div class="price-badge">
-              <span class="price-main">100</span>
-              <span class="price-currency">USD</span>
-            </div>
-            <div class="price-local">
-              <span class="price-number">25,000</span>
-              <span class="price-local-currency">د.ج</span>
-            </div>
-            <div class="price-features">
-              <ul>
-                <li>الوصول الكامل للدورة (4 مراحل)</li>
-                <li>دروس فيديو + شارتات حية</li>
-                <li>مجموعة تليغرام خاصة</li>
-                <li>دعم مباشر لمدة شهر</li>
-                <li>ضمان استرداد 30 يوم</li>
-              </ul>
-            </div>
-            <button class="btn btn-primary pricing-cta" id="pricing-btn">
-              اشترك الآن / Enroll Now
-            </button>
+    <!-- ================= COURSES PAGE ================= -->
+    <section id="courses" class="page hidden" aria-labelledby="courses-title">
+      <header class="page-header">
+        <h1 id="courses-title">Full trading curriculum</h1>
+        <p>
+          A single coherent program that walks you from foundations to confident, rule‑based
+          execution.
+        </p>
+        <p class="text-ar">
+          الدورة مقسمة لوحدات واضحة: من فهم الشموع والسياق، إلى الدخول والخروج وإدارة المخاطر.
+        </p>
+      </header>
+
+      <section class="courses-grid" aria-label="Course modules">
+        <!-- Module 1 -->
+        <article class="course-card">
+          <div class="course-level">
+            <span></span>Module 01
           </div>
-        </div>
-      </section>
+          <h3>Market Structure & Momentum</h3>
+          <p class="course-meta">Price action · Naked chart</p>
+          <ul class="course-topics">
+            <li>Swings, highs/lows and trend definition</li>
+            <li>Break of Structure (BOS) vs. Change of Character (ChoCH)</li>
+            <li>Impulse vs. correction and momentum shifts</li>
+          </ul>
+        </article>
 
-      <!-- Free Lessons Preview -->
+        <!-- Module 2 -->
+        <article class="course-card">
+          <div class="course-level">
+            <span></span>Module 02
+          </div>
+          <h3>Candlesticks & Context</h3>
+          <p class="course-meta">Decision points · Story</p>
+          <ul class="course-topics">
+            <li>Reading candles as order‑flow, not patterns only</li>
+            <li>Rejection wicks, absorption, and liquidity zones</li>
+            <li>Combining candle story with structure</li>
+          </ul>
+        </article>
+
+        <!-- Module 3 -->
+        <article class="course-card">
+          <div class="course-level">
+            <span></span>Module 03
+          </div>
+          <h3>Liquidity & Key Levels</h3>
+          <p class="course-meta">Liquidity · Sessions</p>
+          <ul class="course-topics">
+            <li>Equal highs/lows, internal vs. external liquidity</li>
+            <li>Session highs/lows and time‑of‑day effects</li>
+            <li>Building a clean, minimal chart template</li>
+          </ul>
+        </article>
+
+        <!-- Module 4 -->
+        <article class="course-card">
+          <div class="course-level">
+            <span></span>Module 04
+          </div>
+          <h3>Risk Management Engine</h3>
+          <p class="course-meta">Risk · Position sizing</p>
+          <ul class="course-topics">
+            <li>Fixed % risk per trade and daily loss caps</li>
+            <li>Position sizing math with examples</li>
+            <li>Tracking performance with a journal</li>
+          </ul>
+        </article>
+
+        <!-- Module 5 -->
+        <article class="course-card">
+          <div class="course-level">
+            <span></span>Module 05
+          </div>
+          <h3>Execution Playbook</h3>
+          <p class="course-meta">Entries · Management</p>
+          <ul class="course-topics">
+            <li>Clear entry triggers and invalidation rules</li>
+            <li>Partial profits vs. full take‑profit</li>
+            <li>Building your checklist for every trade</li>
+          </ul>
+        </article>
+
+        <!-- Module 6 -->
+        <article class="course-card">
+          <div class="course-level">
+            <span></span>Module 06
+          </div>
+          <h3>Mindset & Professional Process</h3>
+          <p class="course-meta">Psychology · Routine</p>
+          <ul class="course-topics">
+            <li>Daily routine: pre‑market, live, and post‑market</li>
+            <li>Emotional management during drawdown</li>
+            <li>Turning a plan into a long‑term process</li>
+          </ul>
+        </article>
+      </section>
+    </section>
+
+    <!-- ================= FREE LESSONS PAGE ================= -->
+    <section
+      id="free-lessons"
+      class="page hidden"
+      aria-labelledby="free-lessons-title"
+    >
+      <header class="page-header">
+        <h1 id="free-lessons-title">Free lessons & previews</h1>
+        <p>
+          Get a real taste of the teaching style with complete, practical sessions you can watch
+          before joining.
+        </p>
+        <p class="text-ar">
+          دروس مجانية توضح طريقة الشرح، تحليل الشارت خطوة بخطوة، وكيفية ربط النظرية بالتطبيق.
+        </p>
+      </header>
+
       <section class="free-lessons">
-        <div class="page-header">
-          <h1>ابدأ مجاناً</h1>
-          <p>جرب الدروس الأولى قبل الاشتراك – دروس عملية مباشرة على الشارتات.</p>
-          <p class="section-ar">
-            دروس تمهيدية مجانية لتجربة أسلوب التدريس والجودة قبل الالتزام.
-          </p>
-        </div>
-
         <div class="free-lessons-grid">
-          <!-- Lesson 1 - جاهز للفيديو -->
+          <!-- Lesson 1 -->
           <article class="lesson-card">
             <div class="lesson-video-placeholder">
-              <!-- ضع رابط يوتيوب هنا: -->
-              <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0"></iframe> -->
+              <!-- Replace this <div> with real <iframe> when your video is ready -->
               <div class="video-placeholder">
-                <span>▶️</span>
-                <p>ضع رابط يوتيوب هنا</p>
+                <span class="video-icon">▶</span>
+                <span>Intro: Reading naked charts</span>
               </div>
             </div>
             <div class="lesson-info">
-              <h3>قراءة الشموع الأساسية</h3>
-              <p class="lesson-duration">08:45 دقيقة</p>
-              <p>فهم معنى الـ Wick و Body وكيف تحدد القوة والضعف.</p>
+              <h3>Lesson 01 · Market Structure Basics</h3>
+              <p class="lesson-duration">Approx. 25 minutes</p>
+              <p>
+                Walk through live‑style chart examples to see how structure, swings, and momentum
+                are identified in real time.
+              </p>
             </div>
           </article>
 
-          <!-- Lesson 2 - جاهز للفيديو -->
+          <!-- Lesson 2 -->
           <article class="lesson-card">
             <div class="lesson-video-placeholder">
-              <!-- ضع رابط يوتيوب هنا: -->
-              <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0"></iframe> -->
               <div class="video-placeholder">
-                <span>▶️</span>
-                <p>ضع رابط يوتيوب هنا</p>
+                <span class="video-icon">▶</span>
+                <span>Risk rules that keep you alive</span>
               </div>
             </div>
             <div class="lesson-info">
-              <h3>هيكل السوق الأساسي</h3>
-              <p class="lesson-duration">12:20 دقيقة</p>
-              <p>تحديد القمم والقيعان والترند بدقة على أي إطار زمني.</p>
+              <h3>Lesson 02 · Risk Management Snapshot</h3>
+              <p class="lesson-duration">Approx. 20 minutes</p>
+              <p>
+                See how risk per trade, position size, and daily limits are combined into a simple,
+                repeatable framework.
+              </p>
             </div>
           </article>
 
-          <!-- Lesson 3 - جاهز للفيديو -->
+          <!-- Lesson 3 -->
           <article class="lesson-card">
             <div class="lesson-video-placeholder">
-              <!-- ضع رابط يوتيوب هنا: -->
-              <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0"></iframe> -->
               <div class="video-placeholder">
-                <span>▶️</span>
-                <p>ضع رابط يوتيوب هنا</p>
+                <span class="video-icon">▶</span>
+                <span>Candles and liquidity zones</span>
               </div>
             </div>
             <div class="lesson-info">
-              <h3>مناطق الدعم والمقاومة</h3>
-              <p class="lesson-duration">10:15 دقيقة</p>
-              <p>كيف ترسم المناطق الحقيقية التي تتفاعل معها الأسعار.</p>
+              <h3>Lesson 03 · Candles in Context</h3>
+              <p class="lesson-duration">Approx. 22 minutes</p>
+              <p>
+                Learn how to read rejection wicks and liquidity grabs inside key structure levels.
+              </p>
             </div>
           </article>
         </div>
       </section>
-    </main>
+    </section>
 
-    <!-- COURSES PAGE -->
-    <section id="courses" class="page hidden">
+    <!-- ================= PRICING PAGE ================= -->
+    <section id="pricing" class="page hidden" aria-labelledby="pricing-title">
       <header class="page-header">
-        <h1>Course Structure</h1>
+        <h1 id="pricing-title">Simple, one‑time pricing</h1>
         <p>
-          A structured path from foundations to advanced institutional concepts.
+          Lifetime access to all modules, updates, and free lesson additions as the program grows.
         </p>
-        <p class="section-ar">
-          هيكلة واضحة للدورة من الأساسيات إلى أعمق المفاهيم المؤسسية، خطوة بخطوة.
+        <p class="text-ar">
+          دفع مرة واحدة، وصول كامل للمحتوى الحالي والتحديثات المستقبلية بدون اشتراك شهري.
         </p>
       </header>
 
-      <section class="courses-grid">
-        <article class="course-card">
-          <span class="course-level">Phase 01 · Foundation</span>
-          <h3>Technical Basics & Chart Reading</h3>
-          <p class="course-meta">Price charts · Timeframes · Candles</p>
-          <ul class="course-topics">
-            <li>Market mechanics and how price is delivered</li>
-            <li>Timeframes, sessions and volatility cycles</li>
-            <li>Candlestick logic, wicks and bodies</li>
-            <li>Basic market structure and trend definition</li>
-          </ul>
-          <p class="text-ar">
-            تأسيس قوي لفهم كيفية تحرك السعر، وهياكل السوق الأساسية، وكيفية قراءة
-            الشموع والإطارات الزمنية بثقة.
-          </p>
-        </article>
+      <section class="pricing-section">
+        <div class="pricing-container" aria-label="Course pricing">
+          <article class="pricing-card">
+            <div class="price-badge">
+              <span>Founding member offer</span>
+            </div>
 
-        <article class="course-card">
-          <span class="course-level">Phase 02 · Price Action</span>
-          <h3>Advanced Market Structure</h3>
-          <p class="course-meta">Order flow · Liquidity · Zones</p>
-          <ul class="course-topics">
-            <li>Swings, breaks of structure and trend shifts</li>
-            <li>Liquidity pools, equal highs/lows and stops</li>
-            <li>Key support/resistance and refined zones</li>
-            <li>Entry models based on reaction and confirmation</li>
-          </ul>
-          <p class="text-ar">
-            الانتقال من قراءة عشوائية لحركة السعر إلى فهم احترافي لهياكل السوق،
-            مناطق السيولة، ونماذج الدخول عالية الاحتمالية.
-          </p>
-        </article>
+            <div class="price-main">
+              <span class="price-currency">$</span>
+              <span>97</span>
+            </div>
+            <p class="price-local">
+              <span class="price-number">حوالي 13,000</span>
+              <span class="price-local-currency">دج (سعر تقريبي)</span>
+            </p>
 
-        <article class="course-card">
-          <span class="course-level">Phase 03 · Institutional</span>
-          <h3>SMC, ICT & Wyckoff Logic</h3>
-          <p class="course-meta">Smart money concepts</p>
-          <ul class="course-topics">
-            <li>Premium/discount pricing and dealing ranges</li>
-            <li>Order blocks, FVGs and mitigation concepts</li>
-            <li>Wyckoff accumulation and distribution schematics</li>
-            <li>Designing high-probability trade plans</li>
-          </ul>
-          <p class="text-ar">
-            التعمّق في منطق المؤسسات: مناطق التسعير، البلوك أوردر،
-            <span dir="ltr">FVG</span>، ومراحل التراكم/التصريف بأسلوب مبسط.
-          </p>
-        </article>
+            <ul class="price-features">
+              <li>Full access to all 6 modules</li>
+              <li>All future updates, added lessons, and refinements</li>
+              <li>Downloadable notes, examples, and checklists</li>
+              <li>Lifetime access to the course portal</li>
+            </ul>
 
-        <article class="course-card">
-          <span class="course-level">Phase 04 · Execution</span>
-          <h3>Risk, Psychology & Playbook</h3>
-          <p class="course-meta">Risk model · Mindset · Journaling</p>
-          <ul class="course-topics">
-            <li>Building a personal risk model and daily routine</li>
-            <li>Psychological traps and emotional discipline</li>
-            <li>Trade journaling and data-driven review</li>
-            <li>Building your own trading playbook</li>
-          </ul>
-          <p class="text-ar">
-            تحويل الاستراتيجية إلى نظام عملي منضبط بإدارة مخاطر واضحة، روتين
-            يومي، وتوثيق صفقات يساعدك على التطوّر الحقيقي.
-          </p>
-        </article>
+            <button id="pricing-btn" class="btn btn-primary pricing-cta">
+              Secure your spot
+            </button>
+
+            <p class="pricing-note">
+              No monthly fees. You pay once and keep access even as new content is added.
+            </p>
+            <p class="pricing-note text-ar">
+              لا توجد اشتراكات شهرية – تدفع مرة واحدة وتحصل على التحديثات الجديدة تلقائيًا.
+            </p>
+          </article>
+        </div>
       </section>
     </section>
 
-    <!-- ABOUT PAGE -->
-    <section id="about" class="page hidden">
+    <!-- ================= CONTACT PAGE ================= -->
+    <section id="contact" class="page hidden" aria-labelledby="contact-title">
       <header class="page-header">
-        <h1>About This Program</h1>
+        <h1 id="contact-title">Ask before you join</h1>
         <p>
-          Built for serious traders who want to think and operate like
-          professionals, not signal followers.
+          If you are not sure whether this course fits your level or style, send a quick message
+          and get a clear answer.
         </p>
-        <p class="section-ar">
-          هذه الدورة موجهة للمتداول الذي يريد أن يفهم السوق بعقليّة محترف،
-          بعيدًا عن التوصيات العشوائية والاعتماد على الآخرين.
-        </p>
-      </header>
-
-      <section class="courses-grid">
-        <article class="course-card">
-          <span class="course-level">Methodology</span>
-          <h3>From Theory to Execution</h3>
-          <p>
-            Every concept is connected directly to live chart examples, clear
-            trade logic, and practical checklists you can apply in your own
-            trading.
-          </p>
-          <p class="text-ar">
-            الربط بين الشرح النظري والتطبيق العملي على الشارت، مع خطوات واضحة
-            يمكنك استخدامها كقائمة مراجعة قبل دخول أي صفقة.
-          </p>
-        </article>
-
-        <article class="course-card">
-          <span class="course-level">For Serious Traders</span>
-          <h3>No Hype. Just Clear Logic.</h3>
-          <p>
-            The focus is on clean charts, structured thinking, and data-driven
-            improvement, not on predictions or guaranteed outcomes.
-          </p>
-          <p class="text-ar">
-            التركيز هنا على منطق السوق والانضباط، وليس على الوعود أو النتائج
-            الخيالية. الهدف هو بناء مهارة حقيقية على المدى الطويل.
-          </p>
-        </article>
-      </section>
-    </section>
-
-    <!-- CONTACT PAGE -->
-    <section id="contact" class="page hidden">
-      <header class="page-header">
-        <h1>Contact & Enrollment</h1>
-        <p>
-          For enrollment details, questions, or collaboration, send a message
-          and you will receive a clear response with next steps.
-        </p>
-        <p class="section-ar">
-          للاستفسار عن التسجيل أو أي أسئلة متعلقة بالبرنامج، أرسل رسالة قصيرة
-          وسيتم الرد عليك بخطوات واضحة.
+        <p class="text-ar">
+          عندك أي سؤال عن المحتوى، اللغة، طريقة الشرح، أو طريقة الدفع؟ أرسل رسالة وسأجيبك بوضوح.
         </p>
       </header>
 
       <section class="contact-container">
-        <form id="contact-form" class="contact-form">
+        <form id="contact-form" class="contact-form" novalidate>
           <div class="form-group">
-            <label for="name">Full Name</label>
+            <label for="name">Your name</label>
             <input
               id="name"
               name="name"
               type="text"
-              placeholder="Your full name"
+              autocomplete="name"
+              placeholder="Enter your name"
               required
             />
           </div>
 
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">Email address</label>
             <input
               id="email"
               name="email"
               type="email"
+              autocomplete="email"
               placeholder="you@example.com"
               required
             />
           </div>
 
           <div class="form-group">
-            <label for="message">Message</label>
+            <label for="message">Your question</label>
             <textarea
               id="message"
               name="message"
               rows="4"
-              placeholder="Tell us briefly about your trading experience and what you want from this program."
+              placeholder="Share your current level, goals, and any questions about the program."
               required
             ></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary">
-            Send Message
+            Send message
           </button>
+
+          <p class="contact-hint">
+            Typical reply time: within 24 hours on business days.
+          </p>
         </form>
       </section>
     </section>
+  </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-content">
-        <p class="footer-text">
-          © 2025 Technical Analysis Mastery · All rights reserved.
-        </p>
-        <div class="footer-links">
-          <a href="#home" data-page="home" class="footer-link">Home</a>
-          <a href="#courses" data-page="courses" class="footer-link">Curriculum</a>
-          <a href="#about" data-page="about" class="footer-link">About</a>
-          <a href="#contact" data-page="contact" class="footer-link">Contact</a>
-        </div>
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">
+        © <span id="year"></span> TradingEdge. All rights reserved.
+      </p>
+
+      <div class="footer-links">
+        <a href="#home" data-page="home" class="footer-link">Home</a>
+        <a href="#courses" data-page="courses" class="footer-link">Program</a>
+        <a href="#free-lessons" data-page="free-lessons" class="footer-link">Free lessons</a>
+        <a href="#pricing" data-page="pricing" class="footer-link">Pricing</a>
+        <a href="#contact" data-page="contact" class="footer-link">Contact</a>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
 </html>
