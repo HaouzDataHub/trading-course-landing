@@ -72,6 +72,37 @@
     </div>
   </header>
 
+    <!-- ================= Live Market Ticker (TradingView) ================= -->
+  <section class="market-ticker-live" aria-label="Live global market prices">
+    <div class="tv-ticker-wrapper">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+          async
+        >
+          {
+            "symbols": [
+              { "proName": "FX_IDC:EURUSD", "title": "EUR/USD" },
+              { "proName": "FX_IDC:GBPUSD", "title": "GBP/USD" },
+              { "proName": "OANDA:XAUUSD", "title": "Gold" },
+              { "proName": "OANDA:XAGUSD", "title": "Silver" },
+              { "proName": "DJ:DJI", "title": "US30" },
+              { "proName": "BITSTAMP:BTCUSD", "title": "Bitcoin" }
+            ],
+            "colorTheme": "dark",
+            "isTransparent": true,
+            "displayMode": "adaptive",
+            "locale": "en"
+          }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </div>
+  </section>
+
   <!-- ================= HOME / HERO ================= -->
   <main>
     <section id="home" class="page">
