@@ -943,6 +943,47 @@ p {
   }
 }
 
+/* ================= Live Market Ticker (TradingView) ================= */
+.market-ticker-live {
+  width: 100%;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  background: radial-gradient(circle at left, rgba(15, 23, 42, 0.9), #020617);
+  backdrop-filter: blur(12px);
+}
+
+.tv-ticker-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+  padding-block: 0.15rem;
+  position: relative;
+}
+
+.tv-ticker-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-bottom: 1px solid rgba(99, 102, 241, 0.28);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.tradingview-widget-container {
+  height: 34px;
+  display: flex;
+  align-items: center;
+}
+
+.market-ticker-live .tradingview-widget-container__widget {
+  filter: drop-shadow(0 8px 24px rgba(15, 23, 42, 0.7));
+}
+
+@media (max-width: 768px) {
+  .tv-ticker-wrapper {
+    padding-inline: 1.4rem;
+  }
+}
+
 @media (max-width: 480px) {
   .hero-inner {
     padding: 2.3rem 1.4rem 2.1rem;
